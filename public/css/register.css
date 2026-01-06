@@ -1,0 +1,101 @@
+/* GLOBAL DARK THEME */
+body {
+    background: #0d0f12;
+    font-family: "Inter", sans-serif;
+    color: #e8e8e8;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center content nicely */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Card-style register box */
+#registerForm {
+    background: rgba(255, 255, 255, 0.05); /* glass effect */
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 14px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Title Styling */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/* Input Fields */
+input.form-control {
+    background: #f8f9fc;
+    border: 1px solid #a9c3e9;
+    color: #000000;
+    padding: 10px 12px;
+    height: 45px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+input.form-control:focus {
+    border-color: #6C5CE7;
+    box-shadow: 0px 0px 5px rgba(108, 92, 231, 0.5);
+    outline: none;
+}
+
+/* Labels */
+label.form-label {
+    color: #c9c9c9;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Button Styling */
+button.btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #6C5CE7, #a29bfe);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: 0.3s ease;
+}
+
+button.btn-primary:hover {
+    background: linear-gradient(135deg, #7c6df2, #b5b1ff);
+    transform: translateY(-2px);
+}
+
+/* Login link under button */
+p a {
+    color: #a29bfe;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+p a:hover {
+    color: #dcd6ff;
+}
+
+/* Smooth Fade-in Animation */
+* {
+    animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0px); }
+}

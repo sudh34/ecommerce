@@ -1,0 +1,143 @@
+/* Background full screen */
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(135deg, #0047AB, #0A74F7);
+    overflow: hidden;
+}
+
+/* Blue gradient container */
+.background-wrapper {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+/* Floating shapes background */
+.floating-shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/images/bg-shapes.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.45;
+}
+
+/* Login card */
+.login-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 360px;
+    padding: 35px 30px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    border-radius: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 10px 35px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+/* Logo text */
+.logo {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* Login Title */
+.login-title {
+    text-align: left;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Form Inputs */
+form label {
+    text-align: left;
+    display: block;
+    color: #dbe9ff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input.form-control {
+    height: 44px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    padding-left: 12px;
+}
+
+/* Forgot Password */
+.forgot {
+    display: block;
+    text-align: right;
+    font-size: 13px;
+    color: #dbe9ff;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+/* Sign in button */
+.btn-login {
+    width: 100%;
+    height: 42px;
+    background: linear-gradient(180deg, #002D76, #003C99);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn-login:hover {
+    opacity: 0.9;
+}
+
+/* Divider text */
+.divider {
+    margin: 10px 0;
+    color: #eaf2ff;
+    font-size: 13px;
+}
+
+/* Social login row */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.social-buttons button {
+    width: 42px;
+    height: 42px;
+    border-radius: 6px;
+    border: none;
+    background: white;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+.social-buttons img {
+    width: 20px;
+}
+
+/* Register bottom text */
+.bottom-text {
+    font-size: 13px;
+    color: #e2ecff;
+}
+
+.bottom-text a {
+    color: #fff;
+    text-decoration: underline;
+}
